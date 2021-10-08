@@ -42,8 +42,7 @@ void draw() {
     rotate(rot);
     line(0, faceSizeZ/2-50, 0, faceSizeZ/2);
     popMatrix();
-  } // this for loop draw markers for zoom1
-  //draw point for zoom1
+  } 
   pushMatrix();
   translate(2*width/3+250, 250);
   translate(faceSizeZ*cos(rotation-TWO_PI/4)/2, faceSizeZ*sin(rotation-TWO_PI/4)/2);
@@ -89,7 +88,7 @@ void draw() {
   pushMatrix();
   translate(width/3, height/2);
   rotate(rotation);
-  rotate(offset); //rotation of the map for toronto
+  rotate(offset); 
   image(clock_face, 0, 0, 500, 500);
   rotate(-offset);
   line(0, 0, 0, faceSize/2);
